@@ -1,0 +1,44 @@
+<%-include("./partial/header") %>
+
+<div class="container header-show">
+    <!-- card here -->
+    <div class="card-show">
+        <% movie.forEach(ele=>{ %>
+        <div class="card-body">
+            <h3 class="card-title text-center"><%=ele.title%></h3>
+            <div class="card-text">
+                <div class="row">
+                    <div class="col-lg-6 col-12">
+                        <li><span class="info">Total Seeds</span> : <span class="count"><%=ele.seeds %></span></li>
+                        <li><span class="info"> Total Peers </span> : <span class="count"><%=ele.peers %></span></li>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <li><span class="info"> Total Size </span> : <span class="size"><%=ele.size %></span></li>
+                        <li><span class="info"> Uploaded </span>: <%=ele.time %></li>
+                        <li><span class="info"> By </span> : <a href="https://www.1337x.am/"><%=ele.provider %></a<span><i class="fa fa-anchor"></i></span> </li>
+                    </div>
+                </div>
+
+                <div class="second-box">
+                    <span><i class="fa fa-magnet"></i></span><a href="<%=ele.download %>"
+                        class="text-capitalize download">get this torrent</a>
+                    <p id="problem">(Problems with magnets links are fixed by upgrading your torrent client!)</p>
+                    <div class="torrent-prov">
+                        <p>Torrent from:</p>
+                        <p>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+                        <h4 class="visit"><a href="<%=ele.desc%>"><%=ele.desc%></a></h4>
+                        <p>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+                        <p>Join us and become part of the BIG family! Yarrrrrrrrrrrrrr!!!</p>
+                    </div>
+                    <span><i class="fa fa-magnet"></i></span><a href="<%=ele.download %>"
+                        class="text-capitalize download">get this torrent</a>
+                    <%})%>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ends -->
+
+</div>
+
+<%-include("./partial/footer") %>

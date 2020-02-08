@@ -1,0 +1,377 @@
+html {
+	scroll-behavior: smooth;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+li {
+	list-style: none;
+}
+p {
+	font-weight: 1.5rem;
+	font-weight: 500;
+	color: #606060;
+	line-height: 1.6;
+	text-transform: capitalize;
+}
+
+/* Header Part Starts Here */
+.header {
+	color: #fff;
+	text-align: center;
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+		url('https://images.unsplash.com/photo-1531315630201-bb15abeb1653?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	clip-path: polygon(100% 0%, 100% 75%, 50% 100%, 0% 75%, 0 0);
+	position: relative;
+	z-index: 1;
+}
+.header::before {
+	position: absolute;
+	top: 0%;
+	bottom: 0%;
+	left: 0;
+	right: 0;
+	background: #43cea2;
+	/* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #185a9d, #43cea2);
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #185a9d, #43cea2);
+	opacity: .2;
+}
+.nav-item a {
+	color: #fff;
+	font-size: 1.3rem;
+}
+.nav-item a:hover {
+	text-decoration: underline;
+	color: lightgreen;
+}
+.navbar-brand {
+	font-size: 2.6rem;
+	margin-left: 30px;
+}
+.navbar::before {
+	content: "";
+	position: absolute;
+	top: 0%;
+	bottom: 0%;
+	left: 0;
+	right: 0;
+	background: #42275a; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #734b6d, #42275a); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#734b6d,
+		#42275a
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	opacity: .4;
+	z-index: -1;
+}
+.center-div {
+	width: 100%;
+	height: auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.center-div h1 {
+	text-transform: uppercase;
+	font-size: 4.2rem;
+	font-weight: 800;
+	letter-spacing: 3px;
+	line-height: 1px;
+	margin: 70px auto;
+}
+.center-div p {
+	color: #fff;
+	font-size: 1.3rem;
+	margin-bottom: 40px;
+}
+.header-button {
+	margin: 60px auto;
+}
+.header-button a {
+	width: 100%;
+	padding: 20px 80px;
+	color: #fff;
+	border-radius: 185px;
+	border: 1px solid #fff;
+	text-transform: capitalize;
+	margin: 0 40px;
+	font-size: 1.7rem;
+}
+.fa-superpowers {
+	color: #eb3b5a;
+}
+.header-button a:hover {
+	background-color: #fff;
+	color: #20a74f;
+	box-shadow: 0 32px 20px 0 rgba(0, 0, 0, 0.3);
+	transition: 0.4s ease;
+}
+.header-show {
+	margin: 120px auto;
+}
+.header-show a {
+	color: #202020;
+}
+.header-show a:hover {
+	color: #8d9f0e;
+}
+.header-show p {
+	font-size: 1.3rem;
+}
+/* Header Part Ends Here */
+/* ALL HINDI , ENGLISH & BENGALI STARTS HERE */
+.english,
+.hindi {
+	margin-top: 80px;
+	width: 100%;
+	height: 270vh;
+	padding: 50px 0;
+	background: #e96443;
+	/* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #904e95, #e96443); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		490deg,
+		#860bf3 45%,
+		#fff 0%
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.bengali {
+	margin-top: 80px;
+	width: 100%;
+	height: 270vh;
+	padding: 50px 0;
+	background: #e96443;
+	/* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #904e95, #e96443); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		490deg,
+		#eab543 45%,
+		#fff 0%
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.hindi {
+	margin-top: 80px;
+	width: 100%;
+	height: 270vh;
+	padding: 50px 0;
+	background: #e96443; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #904e95, #e96443); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		490deg,
+		#2bcbba 45%,
+		#fff 0%
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.english h1,
+.hindi h1,
+.bengali h1 {
+	color: #fff;
+	font-size: 2.2rem;
+	margin-bottom: 40px !important;
+	letter-spacing: 3px;
+}
+.movie-names {
+	color: #202020;
+}
+.movie-names:hover {
+	color: #8d9f0e;
+}
+.card {
+	transition: 0.4s ease;
+	margin-bottom: 90px;
+	height: auto;
+	width: 100%;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+	border-radius: 25px;
+}
+.show-button {
+	border-radius: 35px;
+	padding: 12px 20px;
+	margin: 40px auto;
+	text-align: justify;
+	font-size: 1.5rem;
+	background-color: darkmagenta;
+	color: #fff;
+	display: none;
+	text-transform: capitalize;
+	border: 3px solid #606060;
+}
+.card-show {
+	height: 20vh;
+	width: 70%;
+	margin: 0 auto;
+}
+.card-show .card-title {
+	font-size: 1.4rem;
+	font-weight: 900;
+	letter-spacing: 2px;
+	color: #fff;
+	background-color: #42275a;
+	padding: 16px 14px;
+	text-align: left !important;
+}
+.card-show .card-text li {
+	list-style: none;
+	text-align: left;
+	font-size: 1.2rem;
+}
+.card-show .info {
+	color: maroon;
+}
+.second-box {
+	width: 100%;
+	height: auto;
+	text-align: left;
+}
+.second-box .fa-magnet {
+	font-size: 1.9rem;
+	color: red;
+	padding-right: 1%;
+	/* ALL HINDI , ENGLISH & BENGALI ENDS HERE */
+	/* THE SHOW PAGE SECTION STARTS HERE */
+}
+.fa-anchor {
+	margin-left: 9px;
+}
+.download {
+	color: green !important;
+	font-size: 1.3rem;
+}
+#problem {
+	font-size: 0.9rem;
+	color: #202020;
+	font-weight: 500;
+}
+.torrent-prov {
+	border: 2px solid burlywood;
+	padding: 20px 15px;
+	margin-bottom: 20px;
+}
+.torrent-prov p,
+h4 {
+	font-size: 0.9rem;
+}
+.torrent-prov .visit a {
+	color: darkslateblue;
+}
+.card-title {
+	font-size: 1.5rem;
+	font-weight: 800;
+	letter-spacing: 2px;
+	background-color: #fff;
+	padding: 12px 0;
+}
+.card-body a {
+	color: #232323;
+}
+.card-body a:hover {
+	color: #860bf3;
+}
+.card-text {
+	text-align: center;
+	font-weight: 500;
+	letter-spacing: 1px;
+	line-height: 1.8;
+}
+.count {
+	color: #076116;
+}
+.card:hover,
+.card:hover .show-button {
+	transform: translateY(-20%);
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.8);
+	display: block;
+}
+.bollywood-heading h1 {
+	color: #fff;
+	font-size: 2.9rem;
+	margin: 30px auto;
+}
+.card:hover .card-title {
+	color: #860bf3;
+}
+/* THE SHOW PAGE SECTION ENDS HERE */
+/* Scroll Bar */
+#myBtn {
+	position: fixed;
+	bottom: 10%;
+	right: 40px;
+	z-index: 99;
+	border: none;
+	background: #860bf3;
+	padding: 10px;
+	border-radius: 10px;
+	color: #fff;
+	font-size: 1.6rem;
+}
+/* search bar om homepage starts here */
+.search-input {
+	border-radius: 30px 0px 0px 30px;
+	width: 601px !important;
+	padding: 22px 31px;
+	position: relative;
+	margin-left: 120px;
+}
+.search-btn:hover,
+.search-input:hover {
+	border: 1px solid #232323;
+}
+.search-btn {
+	position: absolute;
+	left: 62.86%;
+	padding: 17px 10px;
+	width: 15%;
+	border-radius: 0px 30px 30px 0px;
+	background-color: mediumslateblue;
+	color: #fff;
+	font-size: 1.4rem;
+}
+.newsinput::placeholder {
+	text-align: left;
+	font-size: 1.1rem;
+	font-weight: bold;
+}
+/* search bar om homepage ends here */
+/* Results Page Section Starts Here */
+.table td {
+	font-size: 1.2rem !important;
+}
+.table td a {
+	color: #4b7bec;
+}
+.table th {
+	font-size: 1.4rem;
+	letter-spacing: 3px;
+	font-weight: 600;
+	text-align: left;
+	color: #202020;
+	text-shadow: 0 4px 5px darkgray;
+}
+/* Results Page Section Ends Here */
+@media (max-width: 768px) {
+	.center-div h1 {
+		font-size: 1.1rem;
+	}
+	.header-button a {
+		padding: 20px 16px;
+		font-size: 1.4rem;
+		margin: 16px 2px;
+	}
+}

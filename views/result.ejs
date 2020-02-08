@@ -1,0 +1,46 @@
+<%-include("./partial/header") %>
+<div class="container header-show">
+    <table class="table table-striped table-hover table-responsive-sm table-responsive-md">
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Size</th>
+                <th scope="col">Seeds</th>
+                <th scope="col">Peers</th>
+                <th scope="col">Uploaded</th>
+            </tr>
+        </thead>
+        <tbody>
+            <%if (error  === undefined && movie.length){ %>
+            <% movie.forEach(ele=>{ %>
+            <tr>
+                <!-- <th scope="row">1</th> -->
+                <td><a href="/movie/show/<%=ele.title%>">
+                        <%=ele.title %>
+                    </a></td>
+
+                <td>
+                    <%=ele.size%>
+                </td>
+                <td>
+                    <span class="count"><%=ele.seeds%></span>
+                </td>
+                <td>
+                    <span class="count"><%=ele.peers%></span>
+                </td>
+                <td>
+                    <%=ele.time%>
+                </td>
+
+            </tr>
+            <%})} else {%>
+            <% } %>
+        </tbody>
+    </table>
+
+
+
+
+</div>
+
+<%-include("./partial/footer") %>
