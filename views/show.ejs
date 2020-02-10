@@ -1,5 +1,4 @@
 <%-include("./partial/header") %>
-
 <div class="container header-show">
     <!-- card here -->
     <div class="card-show">
@@ -15,10 +14,10 @@
                     <div class="col-lg-6 col-12">
                         <li><span class="info"> Total Size </span> : <span class="size"><%=ele.size %></span></li>
                         <li><span class="info"> Uploaded </span>: <%=ele.time %></li>
-                        <li><span class="info"> By </span> : <a href="https://www.1337x.am/"><%=ele.provider %></a<span><i class="fa fa-anchor"></i></span> </li>
+                        <li><span class="info"> By </span> : <a href="https://www.1337x.am/"><%=ele.provider %></a<span>
+                                <i class="fa fa-anchor"></i></span> </li>
                     </div>
                 </div>
-
                 <div class="second-box">
                     <span><i class="fa fa-magnet"></i></span><a href="<%=ele.download %>"
                         class="text-capitalize download">get this torrent</a>
@@ -38,7 +37,5 @@
         </div>
     </div>
     <!-- ends -->
-
 </div>
-
 <%-include("./partial/footer") %>

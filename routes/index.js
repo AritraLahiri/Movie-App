@@ -19,7 +19,6 @@ router.get('/', (req, res) => {
 	}
 	const torrents = searchMovie();
 	torrents.then((movie) => {
-		console.log(movie);
 		res.render('index', { movie: movie });
 	});
 });

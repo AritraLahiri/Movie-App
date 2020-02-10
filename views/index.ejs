@@ -14,46 +14,37 @@
     integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
   <title>Torrent-RUSH</title>
 </head>
-
 <div>
-
   <section>
     <div class="header" id="topheader">
       <nav class="navbar navbar-expand-lg fixed-top ">
-        <h2 class="navbar-brand text-white" href="#"><span><i class="fa fa-superpowers"></i></span> Torrent-RUSH</h2>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#hindiid">Bollywood</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#englishid">Hollywood</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#bengaliid">Bengali</a>
-            </li>
-          </ul>
-          <!-- <form class="form-inline my-2 my-lg-0" action="/movie/name" method="GET">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form> -->
-        </div>
+        <div class="container text-uppercase">
+          <h2 class="navbar-brand text-white" href="#"><span><i class="fa fa-superpowers"></i></span> Torrent-RUSH</h2>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">
+              <i class="fa fa-navicon" style="color:#fff; font-size:28px;"></i>
+            </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#footerid">about</a>
+              </li>
+            </ul>
       </nav>
-      <section>
+      </nav>
+      <section class="header-section">
         <div class="center-div">
-          <h1>welcome to torrent-rush</h1>
+          <h1>torrent-rush</h1>
           <div class="container">
             <form class="form-inline my-2 my-lg-0" action="/movie/name" method="GET" id="form">
               <input class="form-control  mr-sm-2 search-input" type="search" placeholder="Search" aria-label="Search"
                 name="search">
-              <button class="btn  my-2 my-sm-0 search-btn" type="submit">Search</button>
+              <button class=" my-2 my-sm-0 search-btn" type="submit">Search</button>
             </form>
           </div>
           <div class="header-button">
@@ -67,25 +58,24 @@
     <!-- Hindi-Movie Section Starts -->
     <section class="hindi " id="hindiid">
       <div class="container bollywood-heading text-center">
-        <h1 class="text-center text-uppercase ">bollywood </h1>
+        <h1 class="text-center text-uppercase ">hindi movies</h1>
       </div>
       <div class="container">
         <div class="row">
           <% movie.hindi.forEach(ele=>{%>
           <div class="col-lg-4 col-12">
             <div class="card">
-              <div class="card-body">
-                <a href="/movie/show/<%=ele.title%>">
+              <a href="/movie/show/<%=ele.title%>" class="movie-link">
+                <div class="card-body">
                   <h3 class="card-title text-center"><%=ele.title%></h3>
-                </a>
-                <div class="card-text">
-                  <li>Total Seeds : <span class="count"><%=ele.seeds %></span></li>
-                  <li>Total Peers : <span class="count"><%=ele.peers %></span></li>
-                  <li>Total Size : <%=ele.size %> </li>
-                  <li>Upload at : <%=ele.time %></li>
-                  <button class="show-button">show more</button>
+                  <div class="card-text">
+                    <li>Total Seeds : <span class="count"><%=ele.seeds %></span></li>
+                    <li>Total Peers : <span class="count"><%=ele.peers %></span></li>
+                    <li>Total Size : <%=ele.size %> </li>
+                    <li>Upload at : <%=ele.time %></li>
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
           <% }) %>
@@ -96,24 +86,24 @@
     <!-- ENGLISH-Movie Section Starts -->
     <section class="english" id="englishid">
       <div class="container bollywood-heading text-center">
-        <h1 class="text-center text-uppercase">hollywood</h1>
+        <h1 class="text-center text-uppercase">english movies</h1>
       </div>
       <div class="container">
         <div class="row">
           <% movie.english.forEach(ele=>{%>
           <div class="col-lg-4 col-12">
             <div class="card">
-              <div class="card-body">
-                <a href="/movie/show/<%=ele.title%>">
+              <a href="/movie/show/<%=ele.title%>" class="movie-link">
+                <div class="card-body">
                   <h3 class="card-title text-center"><%=ele.title%></h3>
-                </a>
-                <div class="card-text">
-                  <li>Total Seeds : <span class="count"><%=ele.seeds %></span></li>
-                  <li>Total Peers : <span class="count"><%=ele.peers %></span></li>
-                  <li>Total Size : <%=ele.size %> </li>
-                  <li>Upload at : <%=ele.time %></li>
+                  <div class="card-text">
+                    <li>Total Seeds : <span class="count"><%=ele.seeds %></span></li>
+                    <li>Total Peers : <span class="count"><%=ele.peers %></span></li>
+                    <li>Total Size : <%=ele.size %> </li>
+                    <li>Upload at : <%=ele.time %></li>
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
           <% }) %>
@@ -125,24 +115,24 @@
     <!-- BENGALI-Movie Section Starts -->
     <section class="bengali" id="bengaliid">
       <div class="container bollywood-heading text-center">
-        <h1 class="text-center text-uppercase">bengali hits</h1>
+        <h1 class="text-center text-uppercase">bengali movies</h1>
       </div>
       <div class="container">
         <div class="row">
           <% movie.bengali.forEach(ele=>{%>
           <div class="col-lg-4 col-12">
             <div class="card">
-              <div class="card-body">
-                <a href="/movie/show/<%=ele.title%>">
+              <a href="/movie/show/<%=ele.title%>" class="movie-link">
+                <div class="card-body">
                   <h3 class="card-title text-center"><%=ele.title%></h3>
-                </a>
-                <div class="card-text">
-                  <li>Total Seeds : <span class="count"><%=ele.seeds %></span></li>
-                  <li>Total Peers : <span class="count"><%=ele.peers %></span></li>
-                  <li>Total Size : <%=ele.size %> </li>
-                  <li>Upload at : <%=ele.time %></li>
+                  <div class="card-text">
+                    <li>Total Seeds : <span class="count"><%=ele.seeds %></span></li>
+                    <li>Total Peers : <span class="count"><%=ele.peers %></span></li>
+                    <li>Total Size : <%=ele.size %> </li>
+                    <li>Upload at : <%=ele.time %></li>
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
           <% }) %>
@@ -150,11 +140,78 @@
       </div>
     </section>
     <!---BENGALI-Movie Section End -->
-    <footer>
-      <div class="scrolltop float-right">
-        <i class="fa fa-arrow-up" onclick="topFunction()" id="myBtn"></i>
 
+    <!-- Footer Begins Here -->
+    <footer class="footer" id="footerid">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-12 ">
+            <h1 class="text-capitalize">aboutUs</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rerum reiciendis, corrupti vel enim
+              doloremque maxime recusandae deleniti, autem reprehenderit laudantium praesentium ducimus blanditiis
+              repudiandae. Quidem quos ex ipsam ipsum?</p>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12 text-center links">
+            <h1 class="text-capitalize">navLinks</h1>
+            <li><a href="#"> Home </a></li>
+            <li><a href="#bengaliid"> Bengali </a></li>
+            <li><a href="#hindiid"> Hindi </a></li>
+            <li><a href="#englishid"> English </a></li>
+          </div>
+          <div class="col-lg-4 col-md-12 col-12 ">
+            <h1>Newsletter</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque pariatur, similique neque eaque ullam eum
+              doloremque, ipsa ex deleniti nihil fugit! Nesciunt molestias et ab quasi magnam voluptas modi facilis.</p>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control newsinput" placeholder="Your Email"
+                aria-label="Recipient's username" aria-describedby="basic-addon2">
+              <div class="input-group-append">
+                <a href=""><span class="input-group-text" id="basic-addon2">Send</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="scrolltop float-right">
+          <i class="fa fa-arrow-up" onclick="topFunction()" id="myBtn"></i>
+        </div>
       </div>
-
     </footer>
-    <%- include("./partial/footer")%>
+    <!-- Footer Ends Here -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+      integrity="sha256-jDnOKIOq2KNsQZTcBTEnsp76FnfMEttF6AV2DF2fFNE=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
+      integrity="sha256-JtQPj/3xub8oapVMaIijPNoM0DHoAtgh/gwFYuN5rik=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+    <script>
+      $('.count').counterUp({
+        delay: 6,
+        time: 1000
+      });
+      button = document.getElementById('myBtn');
+      window.onscroll = function () { scrollFucntion() };
+      function scrollFucntion() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          button.style.display = 'block';
+        }
+        else {
+          button.style.display = 'none';
+        }
+
+      }
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        button.style.transition = '0.9s ease';
+      }
+    </script>
+    </body>
+
+</html>

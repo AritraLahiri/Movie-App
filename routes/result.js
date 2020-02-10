@@ -1,6 +1,5 @@
 const express 	     = require('express'),
 	router 			 = express.Router(),
-	movieinfo        = require('movie-info'),
 	TorrentSearchApi = require('torrent-search-api');
 
 router.get('/movie/:id', (req, res) => {
