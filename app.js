@@ -19,4 +19,8 @@ app.use(flash());
 app.use(index);
 app.use(result);
 app.use(show);
-app.listen(3000);
+
+
+
+// Server 
+app.listen(process.env.PORT || 3000);
