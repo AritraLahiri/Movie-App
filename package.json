@@ -12,11 +12,12 @@
   "dependencies": {
     "body-parser": "^1.19.0",
     "connect-flash": "^0.1.1",
-    "dotenv": "^8.2.0",
+    "dotenv": "^16.0.1",
     "ejs": "^3.0.1",
     "express": "^4.17.1",
     "https": "^1.0.0",
+    "nth-check": "^2.1.1",
     "request": "^2.88.0",
-    "torrent-search-api": "^2.0.10"
+    "torrent-search-api": "^2.1.4"
   }
 }
