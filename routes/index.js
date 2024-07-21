@@ -15,6 +15,7 @@ router.get("/", (req, res) => {
     results.hindi = hindi;
     results.english = english;
     results.bengali = bengali;
+    console.log(hindi);
     return results;
   }
   const torrents = searchMovie();
